@@ -1,40 +1,586 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- INTRO -->
+        <section>
+          <h1>Build Tools</h1>
+          <p>By Rocky Kev</p>
+        </section>
+        <section data-auto-animate>
+          <h2>Before going into build tools, let's talk about:</h2>
+        </section>
+        <section data-auto-animate>
+          <h2>Before going into build tools, let's talk about:</h2>
+          <h2>Browser-based JavaScript vs Node</h2>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <!-- 1 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 2 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+                <li>Utilizing Web APIs</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+                <li>Uses NPM</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 3 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+                <li>Utilizing Web APIs</li>
+                <li>Uses ESModules (New feature)</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+                <li>Uses NPM</li>
+                <li>Uses CommonJS (and recently ESmodules)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- 4 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+                <li>Utilizing Web APIs</li>
+                <li>Uses ESModules (New feature)</li>
+                <li>Uses a Window</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+                <li>Uses NPM</li>
+                <li>Uses CommonJS (and recently ESmodules)</li>
+                <li>Uses Global</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <!-- 5 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+                <li>Utilizing Web APIs</li>
+                <li>Uses ESModules (New feature)</li>
+                <li>Uses a Window</li>
+                <li>
+                  Browsers implement the cutting edge of Javascript Standards
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+                <li>Uses NPM</li>
+                <li>Uses CommonJS (and recently ESmodules)</li>
+                <li>Uses Global</li>
+                <li>
+                  OpenJS Foundation implements the cutting edge of Javascript
+                  Standards
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 -->
+        <section data-auto-animate>
+          <div class="flex-row">
+            <div class="column">
+              <h2>Browser</h2>
+              <ul>
+                <li>Interacting with the DOM</li>
+                <li>Utilizing Web APIs</li>
+                <li>Uses ESModules (New feature)</li>
+                <li>Uses a Window</li>
+                <li>
+                  Browsers implement the cutting edge of Javascript Standards
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Node</h2>
+              <ul>
+                <li>Working with files</li>
+                <li>Uses NPM</li>
+                <li>Uses CommonJS (and recently ESmodules)</li>
+                <li>Uses Global</li>
+                <li>
+                  OpenJS Foundation implements the cutting edge of Javascript
+                  Standards
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3>They both: 💡💡Use Javascript💡💡</h3>
+          </div>
+        </section>
+
+        <section>
+          <section data-auto-animate>
+            <h2>Why Browser JS VS Node?</h2>
+          </section>
+          <section data-auto-animate>
+            <h2>Why Browser JS VS Node?</h2>
+            <h3>Because just like English...</h3>
+          </section>
+          <section data-auto-animate>
+            <h2>Why Browser JS VS Node?</h2>
+            <h3>Because just like English...</h3>
+            <ul>
+              <li>UK English</li>
+              <li>Australian English</li>
+              <li>American English</li>
+            </ul>
+          </section>
+          <section data-auto-animate>
+            <h2>Why Browser JS VS Node?</h2>
+            <h3>Because just like English...</h3>
+            <ul>
+              <li>UK English</li>
+              <li>Australian English</li>
+              <li>American English</li>
+            </ul>
+            <p>"It's all just Javascript" isn't exactly true.</p>
+          </section>
+        </section>
+
+        <!-- BUILD TOOLS -->
+        <section data-markdown>
+          <textarea data-template>
+		Let's talk about build tools. 
+
+		![](https://i.imgur.com/ES6oj2V.png)
+		---
+		Data goes in, data goes out.
+
+		![](https://i.imgur.com/q8LYvOC.png)
+		---
+		## I'm going to run you through about 10+ scenarios. 
+
+		![](https://i.imgur.com/ES6oj2V.png)
+		---
+
+		But before that, let's talk about No-tools. 
+
+		In vanilla HTML (index.html): 
+
+		```html [1-8|10-17]
+		<!-- Styles -->
+		<link rel="stylesheet" href="src/css/style1.css">
+		<link rel="stylesheet" href="src/css/style2.css">
+		<link rel="stylesheet" href="src/css/style3.css">
+		<link rel="stylesheet" href="src/css/style4.css">
+		<link rel="stylesheet" href="src/css/style5.css">
+		<link rel="stylesheet" href="src/css/style6.css">
+		<link rel="stylesheet" href="src/css/style7.css">
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="src/js/lib1.js"></script>
+		<script type="text/javascript" src="src/js/lib2.js"></script>
+		<script type="text/javascript" src="src/js/lib3.js"></script>
+		<script type="text/javascript" src="src/js/lib4.js"></script>
+		<script type="text/javascript" src="src/js/lib5.js"></script>
+		<script type="text/javascript" src="src/js/lib6.js"></script>
+		<script type="text/javascript" src="src/js/lib7.js"></script>		
+
+		```
+
+		In WordPress (functions.php):
+
+		```php [0|1-2|4-5]
+		// Enqueue my styles.
+		wp_enqueue_style( 'style1', $path . 'src/css/style1.css' );
+		
+		// Enqueue my scripts.
+		wp_enqueue_script( 'lib1', $path .  'src/css/lib1.js', array(), null, true );    
+		
+		```
+		--- 
+
+
+	</textarea
+          >
+        </section>
+
+        <!-- SCENARIOS -->
+
+        <!-- S1 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 1 - would be cool to compile all of these?</p>
+          </section>
+          <section data-auto-animate>
+            <p>Scenario 1 - would be cool to compile all of these?</p>
+            <pre><code data-line-numbers><script type="text/template"><link rel="stylesheet" href="src/css/style1.css">
+<link rel="stylesheet" href="src/css/style2.css">
+<link rel="stylesheet" href="src/css/style3.css">
+<link rel="stylesheet" href="src/css/style4.css">
+<link rel="stylesheet" href="src/css/style5.css">
+<link rel="stylesheet" href="src/css/style6.css">
+<link rel="stylesheet" href="src/css/style7.css">
+</script></code></pre>
+          </section>
+          <section data-auto-animate>
+            <p>Scenario 1 - would be cool to compile all of these?</p>
+            <p><img src="https://i.imgur.com/hUjjAYm.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
+          </section>
+          <section>
+            <p>Before</p>
+            <pre><code data-line-numbers><script type="text/template"><link rel="stylesheet" href="src/css/style1.css">
+<link rel="stylesheet" href="src/css/style2.css">
+<link rel="stylesheet" href="src/css/style3.css">
+<link rel="stylesheet" href="src/css/style4.css">
+<link rel="stylesheet" href="src/css/style5.css">
+<link rel="stylesheet" href="src/css/style6.css">
+<link rel="stylesheet" href="src/css/style7.css">
+				</script></code></pre>
+            <p>After</p>
+            <pre><code data-line-numbers><script type="text/template"><link rel="stylesheet" href="assets/styles-combined.css">
+</script></code></pre>
+          </section>
+        </section>
+
+        <!-- S2 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 2 - Minify and obfuscate</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 2 - Minify and obfuscate</p>
+            <p><img src="https://i.imgur.com/VisefIY.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S3 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 3 - Vendor Prefixes</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 3 - Vendor Prefixes</p>
+            <p><img src="https://i.imgur.com/c5seKk8.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
+          </section>
+
+          <section>
+            <pre><code data-line-numbers="1-4,6-13,15-18">
+            <!-- Code like this -->
+            div { 
+              transition: all 4s ease; 
+            }
+
+            <!-- Gets converted to this for older browsers -->
+            div { 
+              -webkit-transition: all 4s ease; 
+              -moz-transition: all 4s ease;
+              -ms-transition: all 4s ease; 
+              -o-transition: all 4s ease; transition:
+              all 4s ease; 
+          }
+
+            <!-- Modern browsers don't need it -->
+            div { 
+              transition: all 4s ease; 
+            } 
+            </code></pre>
+          </section>
+        </section>
+
+        <!-- S4 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 4 - Babel</p>
+          </section>
+          <section data-auto-animate>
+            <p>Scenario 4 - Babel</p>
+            <p><img src="https://i.imgur.com/QHMCZ3g.png" alt="" /></p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 4 - Babel</p>
+            <p><img src="https://i.imgur.com/2SqXbhR.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S5 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 5 - Compiling SCSS</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 5 - Compiling SCSS</p>
+            <p><img src="https://i.imgur.com/Zp5d2LC.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S6 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 6 - Generating Sourcemaps</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 6 - Generating Sourcemaps</p>
+            <p><img src="https://i.imgur.com/jAfSUTZ.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S7 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 7 - Linting</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 7 - Linting</p>
+
+            <pre><code data-line-numbers="1-4,6-10,12-13">
+              // Yennifer 
+              function() { 
+                // ... 
+              }
+  
+              // Trish 
+              function() 
+              { 
+                // ... 
+              }
+  
+              // Geralt 
+              function ( ) { // ... }
+              </code></pre>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 7 - Linting</p>
+            <p><img src="https://i.imgur.com/61ghO5X.png" alt="" /></p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 7 - Linting</p>
+            <p><img src="https://i.imgur.com/xhmOPoY.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S8 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 8 - Hot-Reloading</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 8 - Hot-Reloading</p>
+            <p>
+              <video width="320" height="240" controls>
+                <source
+                  src="https://i.imgur.com/ejrf6zQ.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S9 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 9 - Compiling into Web Langs</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 9 - Compiling into Web Langs</p>
+            <p><img src="https://i.imgur.com/1xnTiBq.png" alt="" /></p>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 9 - Compiling into Web Langs</p>
+            <p><img src="https://i.imgur.com/MgA4IPf.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S10 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 10 - Borrowing Libraries and NPM</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 10 - Borrowing Libraries and NPM</p>
+
+            ```html
+            <script
+              type="text/javascript"
+              src="node_modules/external-library/src/index.js"
+            ></script>
+            ```
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 10 - Borrowing Libraries and NPM</p>
+
+            ```js import Bootstrap from 'bootstrap'; import React from 'react';
+            ```
+
+            <pre><code data-line-numbers>
+              import Bootstrap from 'bootstrap'; 
+              import React from 'react';
+              </code></pre>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- S11 -->
+        <section>
+          <section data-auto-animate>
+            <p>Scenario 11 - Treeshaking</p>
+          </section>
+
+          <section data-auto-animate>
+            <p>Scenario 11 - Treeshaking</p>
+
+            <pre><code data-line-numbers>
+              // BEFORE 
+              import Bootstrap from 'bootstrap'; 
+              import React from 'react'; 
+
+              // AFTER 
+              import { tooltips, row, column } from 'bootstrap';
+              import React, { Component } from 'react';
+              </code></pre>
+          </section>
+
+          <section>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+          </section>
+        </section>
+
+        <!-- <section data-markdown>
+          <textarea data-template>
+			## Scenario 1 - Stuff
+	  </textarea
+          >
+        </section> -->
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
