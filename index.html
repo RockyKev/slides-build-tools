@@ -25,11 +25,15 @@
           <p>By Rocky Kev</p>
         </section>
         <section data-auto-animate>
-          <h2>Before going into build tools, let's talk about:</h2>
+          <p>Before going into build tools, let's talk about:</p>
         </section>
         <section data-auto-animate>
-          <h2>Before going into build tools, let's talk about:</h2>
-          <h2>Browser-based JavaScript vs Node</h2>
+          <p>Before going into build tools, let's talk about:</p>
+          <h2>
+            Browser-based JavaScript <br />
+            vs <br />
+            Node
+          </h2>
         </section>
 
         <!-- 1 -->
@@ -38,13 +42,13 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
-                <li>Interacting with the DOM</li>
+                <li>Uses ESModules (New feature)</li>
               </ul>
             </div>
             <div class="column">
               <h2>Node</h2>
               <ul>
-                <li>Working with files</li>
+                <li>Uses CommonJS (and recently ESmodules)</li>
               </ul>
             </div>
           </div>
@@ -55,15 +59,15 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
+                <li>Uses ESModules (New feature)</li>
                 <li>Interacting with the DOM</li>
-                <li>Utilizing Web APIs</li>
               </ul>
             </div>
             <div class="column">
               <h2>Node</h2>
               <ul>
+                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Working with files</li>
-                <li>Uses NPM</li>
               </ul>
             </div>
           </div>
@@ -74,17 +78,17 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
+                <li>Uses ESModules (New feature)</li>
                 <li>Interacting with the DOM</li>
                 <li>Utilizing Web APIs</li>
-                <li>Uses ESModules (New feature)</li>
               </ul>
             </div>
             <div class="column">
               <h2>Node</h2>
               <ul>
+                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Working with files</li>
                 <li>Uses NPM</li>
-                <li>Uses CommonJS (and recently ESmodules)</li>
               </ul>
             </div>
           </div>
@@ -95,18 +99,18 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
+                <li>Uses ESModules (New feature)</li>
                 <li>Interacting with the DOM</li>
                 <li>Utilizing Web APIs</li>
-                <li>Uses ESModules (New feature)</li>
                 <li>Uses a Window</li>
               </ul>
             </div>
             <div class="column">
               <h2>Node</h2>
               <ul>
+                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Working with files</li>
                 <li>Uses NPM</li>
-                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Uses Global</li>
               </ul>
             </div>
@@ -119,9 +123,9 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
+                <li>Uses ESModules (New feature)</li>
                 <li>Interacting with the DOM</li>
                 <li>Utilizing Web APIs</li>
-                <li>Uses ESModules (New feature)</li>
                 <li>Uses a Window</li>
                 <li>
                   Browsers implement the cutting edge of Javascript Standards
@@ -131,9 +135,9 @@
             <div class="column">
               <h2>Node</h2>
               <ul>
+                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Working with files</li>
                 <li>Uses NPM</li>
-                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Uses Global</li>
                 <li>
                   OpenJS Foundation implements the cutting edge of Javascript
@@ -150,9 +154,9 @@
             <div class="column">
               <h2>Browser</h2>
               <ul>
+                <li>Uses ESModules (New feature)</li>
                 <li>Interacting with the DOM</li>
                 <li>Utilizing Web APIs</li>
-                <li>Uses ESModules (New feature)</li>
                 <li>Uses a Window</li>
                 <li>
                   Browsers implement the cutting edge of Javascript Standards
@@ -162,9 +166,9 @@
             <div class="column">
               <h2>Node</h2>
               <ul>
+                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Working with files</li>
                 <li>Uses NPM</li>
-                <li>Uses CommonJS (and recently ESmodules)</li>
                 <li>Uses Global</li>
                 <li>
                   OpenJS Foundation implements the cutting edge of Javascript
@@ -184,11 +188,11 @@
           </section>
           <section data-auto-animate>
             <h2>Why Browser JS VS Node?</h2>
-            <h3>Because just like English...</h3>
+            <p>Because just like English...</p>
           </section>
           <section data-auto-animate>
             <h2>Why Browser JS VS Node?</h2>
-            <h3>Because just like English...</h3>
+            <p>Because just like English...</p>
             <ul>
               <li>UK English</li>
               <li>Australian English</li>
@@ -197,7 +201,7 @@
           </section>
           <section data-auto-animate>
             <h2>Why Browser JS VS Node?</h2>
-            <h3>Because just like English...</h3>
+            <p>Because just like English...</p>
             <ul>
               <li>UK English</li>
               <li>Australian English</li>
@@ -218,7 +222,7 @@
 
 		![](https://i.imgur.com/q8LYvOC.png)
 		---
-		## I'm going to run you through about 10+ scenarios. 
+		I'm going to run you through about 10+ scenarios. 
 
 		![](https://i.imgur.com/ES6oj2V.png)
 		---
@@ -339,26 +343,26 @@
           </section>
 
           <section>
-            <pre><code data-line-numbers="1-4,6-13,15-18">
-            <!-- Code like this -->
-            div { 
-              transition: all 4s ease; 
-            }
+<pre><code data-line-numbers="1-4|6-13|15-18">
+<!-- Code like this -->
+div { 
+  transition: all 4s ease; 
+}
 
-            <!-- Gets converted to this for older browsers -->
-            div { 
-              -webkit-transition: all 4s ease; 
-              -moz-transition: all 4s ease;
-              -ms-transition: all 4s ease; 
-              -o-transition: all 4s ease; transition:
-              all 4s ease; 
-          }
+<!-- Gets converted to this for older browsers -->
+div { 
+  -webkit-transition: all 4s ease; 
+  -moz-transition: all 4s ease;
+  -ms-transition: all 4s ease; 
+  -o-transition: all 4s ease; transition:
+  all 4s ease; 
+}
 
-            <!-- Modern browsers don't need it -->
-            div { 
-              transition: all 4s ease; 
-            } 
-            </code></pre>
+<!-- Modern browsers don't need it -->
+div { 
+  transition: all 4s ease; 
+} 
+</code></pre>
           </section>
         </section>
 
@@ -406,12 +410,13 @@
 
           <section data-auto-animate>
             <p>Scenario 6 - Generating Sourcemaps</p>
-            <p><img src="https://i.imgur.com/jAfSUTZ.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
+
         </section>
 
         <!-- S7 -->
@@ -423,25 +428,25 @@
           <section data-auto-animate>
             <p>Scenario 7 - Linting</p>
 
-            <pre><code data-line-numbers="1-4,6-10,12-13">
-              // Yennifer 
-              function() { 
-                // ... 
-              }
-  
-              // Trish 
-              function() 
-              { 
-                // ... 
-              }
-  
-              // Geralt 
-              function ( ) { // ... }
+            <pre><code data-line-numbers="2-5|7-11|12-14">
+// Yennifer 
+function() { 
+  // ... 
+}
+
+// Trish 
+function() 
+{ 
+  // ... 
+}
+
+// Geralt 
+function ( ) { // ... }
               </code></pre>
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
 
           <section data-auto-animate>
@@ -474,7 +479,7 @@
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
         </section>
 
@@ -490,7 +495,7 @@
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
 
           <section data-auto-animate>
@@ -508,28 +513,20 @@
           <section data-auto-animate>
             <p>Scenario 10 - Borrowing Libraries and NPM</p>
 
-            ```html
-            <script
-              type="text/javascript"
-              src="node_modules/external-library/src/index.js"
-            ></script>
-            ```
+            <pre><code data-line-numbers><script
+  src="node_modules/external-library/src/index.js"
+></script>
+            </code></pre>
           </section>
 
           <section data-auto-animate>
-            <p>Scenario 10 - Borrowing Libraries and NPM</p>
-
-            ```js import Bootstrap from 'bootstrap'; import React from 'react';
-            ```
-
-            <pre><code data-line-numbers>
-              import Bootstrap from 'bootstrap'; 
-              import React from 'react';
-              </code></pre>
+            <p>Scenario 10 - Borrowing Libraries and NPM</p><pre><code data-line-numbers>import Bootstrap from 'bootstrap'; 
+import React from 'react';
+</code></pre>
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
         </section>
 
@@ -542,28 +539,21 @@
           <section data-auto-animate>
             <p>Scenario 11 - Treeshaking</p>
 
-            <pre><code data-line-numbers>
-              // BEFORE 
-              import Bootstrap from 'bootstrap'; 
-              import React from 'react'; 
+            <pre><code data-line-numbers><!-- BEFORE -->
+import Bootstrap from 'bootstrap'; 
+import React from 'react'; 
 
-              // AFTER 
-              import { tooltips, row, column } from 'bootstrap';
-              import React, { Component } from 'react';
-              </code></pre>
+<!----> AFTER -->
+import { tooltips, row, column } from 'bootstrap';
+import React, { Component } from 'react';</code></pre>
           </section>
 
           <section>
-            <p><img src="https://i.imgur.com/2AfVvlI.png" alt="" /></p>
+            <p><img src="https://i.imgur.com/ES6oj2V.png" alt="" /></p>
           </section>
         </section>
 
-        <!-- <section data-markdown>
-          <textarea data-template>
-			## Scenario 1 - Stuff
-	  </textarea
-          >
-        </section> -->
+
       </div>
     </div>
 
