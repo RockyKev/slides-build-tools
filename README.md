@@ -1,6 +1,10 @@
 ## Build Tools Presentation
 
-Resources: Build Tools Gulp Template:  https://github.com/RockyKev/build-tools-gulp-template
+Resources
+
+* Gulp Template:  https://github.com/RockyKev/build-tools-gulp-template
+* Laravel-mix Template: https://github.com/RockyKev/build-tools-laravel-mix-template/tree/main
+
 
 ## Slides
 
